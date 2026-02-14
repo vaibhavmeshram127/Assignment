@@ -3,8 +3,13 @@ This project replicates the output interface and evaluation layout from the rese
 
 
 Title: Unlocking the Conversion of Web Screenshots into HTML Code with the WebSight Dataset
+
+
 Authors: Hugo Laurençon, Léo Tronchon, Victor Sanh
+
+
 Published: 2023
+
 Source: Hugging Face / arXiv
 
 
