@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebSight Results</title>
+  <style>
+    /* General Reset */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.1em;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #e0e0e0;
+      padding: 10px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 15px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #004080;
+      font-weight: bold;
+    }
+    nav ul li a.active {
+      color: #ff6600;
+    }
+
+    /* Columns */
+    .columns {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px;
+    }
+    .column {
+      width: 45%;
+      background-color: white;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .column img {
+      max-width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    pre {
+      background-color: #f4f4f4;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+
+    /* Sections */
+    section {
+      margin: 20px;
+      background-color: white;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    section h2 {
+      color: #004080;
+      margin-top: 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>WebSight Results</h1>
+    <p>Research Showcase: Screenshot to HTML Conversion</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dataset.html">Dataset</a></li>
+      <li><a href="results.html" class="active">Results</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <div class="columns">
+      <!-- Screenshot Preview -->
+      <div class="column">
+        <h2>Screenshot Preview</h2>
+        <img src="s1.png" alt="Web page screenshot">
+      </div>
+
+      <!-- Generated HTML Output -->
+      <div class="column">
+        <h2>Generated HTML Output</h2>
+        <pre>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample Page</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <p>This is an auto-generated HTML page.</p>
+  </body>
+</html>
+        </pre>
+      </div>
+    </div>
+
+    <!-- Model Reasoning -->
+    <section class="model-reasoning">
+      <h2>Model Reasoning</h2>
+      <p>
+        The WebSight model interprets visual layout features such as headings, 
+        paragraphs, and links. It maps these to semantic HTML tags. In this example, 
+        the title was correctly mapped to <code>&lt;h1&gt;</code> and the paragraph 
+        to <code>&lt;p&gt;</code>.
+      </p>
+    </section>
+
+    <!-- Accuracy Metrics -->
+    <section class="metrics">
+      <h2>Accuracy Metrics</h2>
+      <ul>
+        <li>BLEU Score: 0.82</li>
+        <li>Exact Match: 76%</li>
+        <li>F1 Score: 0.79</li>
+      </ul>
+    </section>
+
+    <!-- Error Analysis -->
+    <section class="error-analysis">
+      <h2>Error Analysis</h2>
+      <p>
+        The model simplified the footer and did not reproduce the navigation bar. 
+        This reflects common challenges in handling complex layouts, as noted in 
+        the WebSight research paper.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Student Project</p>
+  </footer>
+</body>
+</html>
